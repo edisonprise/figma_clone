@@ -7,7 +7,7 @@ const LiveCursors = ({others}: LiveCursorProps) => {
     return others.map(({connectionId, presence}) => {
         if(!presence?.cursor) return null;
         return (
-          <Cursor 
+          <Cursor
           key={connectionId}
           color={COLORS[Number(connectionId) % COLORS.length]}
           x={presence.cursor.x}
