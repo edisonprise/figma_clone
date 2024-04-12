@@ -17,16 +17,16 @@ export default function Page() {
   const selectedShapeRef = useRef<string | null>(null);
 
   const [activeElement, setActiveElement] = useState<ActiveElement>({
-    name: '',
-    value: '',
-    icon: '',
-  })
+    name: "",
+    value: "",
+    icon: "",
+  });
 
   const handleActiveElement = (elem: ActiveElement) => {
-    setActiveElement(elem)
+    setActiveElement(elem);
 
-    selectedShapeRef.current = elem?.value as string
-  }
+    selectedShapeRef.current = elem?.value as string;
+  };
 
   useEffect(() => {
     const canvas = initializeFabric({ canvasRef, fabricRef });
@@ -47,9 +47,9 @@ export default function Page() {
 
   return (
     <main className="h-screen overflow-hidden">
-      <Navbar 
-      activeElement={activeElement}
-      handleActiveElement={handleActiveElement}
+      <Navbar
+        activeElement={activeElement}
+        handleActiveElement={handleActiveElement}
       />
       <section className="flex h-full flex-row">
         <LeftSidebar />
