@@ -6,10 +6,10 @@ import { memo } from "react";
 import { navElements } from "@/constants";
 import { ActiveElement, NavbarProps } from "@/types/type";
 
-/* import { Button } from "./ui/button";
+import { Button } from "./ui/button";
 import ShapesMenu from "./ShapesMenu";
 import ActiveUsers from "./users/ActiveUsers";
-import { NewThread } from "./comments/NewThread"; */
+import { NewThread } from "./comments/NewThread";
 
 const Navbar = ({
   activeElement,
